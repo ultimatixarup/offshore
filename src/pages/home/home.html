@@ -1,14 +1,177 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
+<ion-content>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+            <div>
+            
+                <ion-slides autoplay="500" loop="true" speed="3000" style="vertical-align:top">
+                    <ion-slide >
+                      <img style="height:250px;width:100%" src="http://d1dcu4sbskithe.cloudfront.net/img/slide1.jpg">
+                    </ion-slide>
+                    <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide2.jpg">
+                    </ion-slide>
+                    <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide3.jpg">
+                    </ion-slide>
+                     <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide4.jpg">
+                    </ion-slide>
+            </ion-slides>
+                
+                </div>
+                <div style="background: url('http://d1dcu4sbskithe.cloudfront.net/img/frontpage_bg.jpg');background-repeat:round;height:50px;width:100%;margin-left: 5px;margin-right: 5px">
+                 <p>
+                     <font color="white"><i><ul><b>Quote of the day~<br/></b>
+                         Yoga is not about touching your toes. It is what you learn on the way down
+                         </ul></i></font><br/>
+                     
+                </p>
+                    </div>
+    
+                 <ion-list>
+                  <ion-item>
+                    <ion-thumbnail item-start>
+                      <a href="#" (click)="playWhoAmI()"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/aboutus.png"></a>
+                      </ion-thumbnail>
+                    <h2>About Dr Yogi</h2>
+                    <h3>Tap to find more about Dr Yogi</h3>
+                      <button ion-button clear item-end>View</button>
+                  </ion-item>
+                      <ion-item>
+                   <ion-thumbnail item-start>
+                      <a (click)="goToAilements('15')"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/15min.png"></a>
+                          </ion-thumbnail>
+                    <h2>Taste Wellness</h2>
+                    <h3>Find relief in 15 min from your ailement</h3>
+                          <button ion-button clear item-end (click)="goToAilements('15')">View</button>
+                  </ion-item>
+                
+                      <ion-item>
+                    <ion-thumbnail item-start>
+                     <a href="#" (click)="goToAilements('60')"><img style="height:75px;width:75px" src="http://d1dcu4sbskithe.cloudfront.net/media/1hr.png"></a>
+                          </ion-thumbnail>
+                    <h2>Enjoy Wellness</h2>
+                    <h3>Practice 60 minute sessions to get well inside out</h3>
+                          <button ion-button clear item-end (click)="goToAilements('60')">View</button>
+                  </ion-item>
+                     
+                     <ion-item>
+                    <ion-thumbnail item-start>
+                     <a href="#" (click)="goToAilements('meditation')"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/meditation.png"></a>
+                         </ion-thumbnail>
+                    <h2>Feel Wellness</h2>
+                    <h3>Meditate with Dr Yogi</h3>
+                         <button ion-button clear item-end (click)="goToAilements('meditation')">View</button>
+                  </ion-item>
+                     
+                      <ion-item>
+                    <ion-thumbnail item-start>
+                     <a href="#" (click)="goToAilements('mobile')"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/mobileyoga.png"></a>
+                          </ion-thumbnail>
+                    <h2>Mobile Wellness</h2>
+                    <h3>Use Dr Yogi when travelling</h3>
+                          <button ion-button clear item-end (click)="goToAilements('mobile')">View</button>
+                  </ion-item>
+                     
+                        <ion-item>
+                    <ion-thumbnail item-start>
+                     <a href="#" (click)="goToContact()"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/contact.png"></a>
+                            </ion-thumbnail>
+                    <h2>Consult Wellness</h2>
+                    <h3>Send a message to Dr Yogi</h3>
+                            <button ion-button clear item-end (click)="goToContact()">View</button>
+                  </ion-item>
+                     
+                     <ion-item>
+                    <ion-thumbnail item-start>
+                     <a href="#" (click)="goToFeedback()"> <img class="image_icon" src="http://d1dcu4sbskithe.cloudfront.net/media/feedback_main.png"></a>
+                         </ion-thumbnail>
+                    <h2>Feedback</h2>
+                    <h3>Give your feedback to DrYogi</h3>
+                         <button ion-button clear item-end (click)="goToFeedback()">View</button>
+                  </ion-item>
+                     
+                </ion-list>
+                
+    <div>
+            
+                <ion-slides autoplay="500" loop="true" speed="3000" style="vertical-align:top">
+                    <ion-slide >
+                      <img style="height:250px;width:100%" src="http://d1dcu4sbskithe.cloudfront.net/img/slide1.jpg">
+                    </ion-slide>
+                    <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide2.jpg">
+                    </ion-slide>
+                    <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide3.jpg">
+                    </ion-slide>
+                     <ion-slide >
+                      <img style="height:250px;width:100%"  src="http://d1dcu4sbskithe.cloudfront.net/img/slide4.jpg">
+                    </ion-slide>
+            </ion-slides>
+                
+                </div>
+ 
+    <ion-item *ngIf="loggedinUser">
+        <ion-label>Logged in user: {{loggedinUser}}</ion-label>
+    </ion-item>
+        
+        
+ 
+    <!-- <img src="http://bsswest.org/yogamedia/yoga-poster.jpg" height="100%" width="100%"> -->
+    <!-- <div style="height:100%;width:100%">
+     <video class="video" webkit-playsinline poster="http://bsswest.org/yogamedia/yoga-poster.jpg"><source src="http://bsswest.org/yogamedia/c8z43_blVQA.mp4"/></video>
+     
+     </div> -->
+    
+    </ion-content>
+<ion-footer>
+   <ion-navbar>
+    <button ion-button>
+      <ion-icon (click)="goToHome()" name="home"></ion-icon>
+      
+    </button>
+    <button ion-button>
+      <ion-icon (click)="goToFavs()" name="heart"></ion-icon>  
+    </button>
+       
+    <button ion-button>
+      <ion-icon (click)="goToLogin()" name="log-in"> {{loginLabel }}</ion-icon>  
+    </button>
+       
+    <button ion-button>
+      <ion-icon (click)="refresh()" name="refresh"></ion-icon>  
+    </button>
+       
+   
+    
+  </ion-navbar>
+</ion-footer>    
+<style>
+    .btn {
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #3498db;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+   
+
+    </style>
